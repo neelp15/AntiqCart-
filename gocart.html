@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart with Recommendations</title>
+    <link rel="stylesheet" href="gotocart.css"> <!-- CSS file link -->
+</head>
+<body>
+    <div class="cart-container">
+        <!-- Cart Icon -->
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒 <span class="cart-count">0</span>
+        </div>
+
+        <!-- Cart Modal -->
+        <div id="cart-modal" class="cart-modal hidden">
+                <div class="cart-header">
+                    <h2>Your Cart</h2>
+                    <!-- Close button as a link -->
+                    <a href="go.html" class="close-btn">✖</a>
+                </div>
+            <div class="cart-items">
+                <!-- Dynamically added cart items -->
+            </div>
+            <div class="cart-total">
+                <p>Total Cost: <span id="total-cost">0</span> USD</p>
+            </div>
+            <div class="cart-footer">
+                <button class="checkout-btn" onclick="checkout()">Checkout</button>
+            </div>
+
+            <div class="recommendations">
+                <h3>Recommended for You</h3>
+                <div class="recommendation-items">
+                    <div class="recommendation-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrWhbniiJpuS5y96uzkFCU37SDTrOGxFDB8A&s" alt="Antique Vase">
+                        <p>Antique Vase - $50</p>
+                        <button onclick="addToCart('Antique Vase', 50)">Add to Cart</button>
+                    </div>
+                    <div class="recommendation-item">
+                        <img src="https://images-cdn.ubuy.co.in/6539ba8994c63f39204ac19c-aels-vintage-wall-clock-european-style.jpg" alt="Vintage Clock">
+                        <p>Vintage Clock - $80</p>
+                        <button onclick="addToCart('Vintage Clock', 80)">Add to Cart</button>
+                    </div>
+                    <div class="recommendation-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyuNtLeLTAFHWDMg-j0VRUrxoRiBX9-7WQcg&s" alt="Classic Painting">
+                        <p>Classic Painting - $120</p>
+                        <button onclick="addToCart('Classic Painting', 120)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Retrieve cart items from localStorage
+            const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            const cartItemsContainer = document.querySelector('.cart-items');
+            const totalCostElement = document.getElementById('total-cost');
+            let totalCost = 0;
+    
+            if (cartItems.length === 0) {
+                cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
+            } else {
+                cartItems.forEach((item, index) => {
+                    const itemElement = document.createElement('div');
+                    itemElement.className = 'cart-item';
+                    itemElement.innerHTML = `
+                        <p>${item.name} - $${item.price}</p>
+                        <button class="delete-btn" onclick="deleteFromCart(${index})">Delete</button>
+                    `;
+                    cartItemsContainer.appendChild(itemElement);
+                    totalCost += item.price;
+                });
+            }
+            totalCostElement.textContent = totalCost;
+        });
+    
+        function deleteFromCart(index) {
+            let cart = JSON.parse(localStorage.getItem('cartItems'));
+            cart.splice(index, 1); // Remove item
+            localStorage.setItem('cartItems', JSON.stringify(cart));
+            location.reload(); // Refresh the page
+        }
+
+    //  <script>
+    //     // JavaScript for Cart Functionality
+    //     let cartItems = [];
+    //     let totalCost = 0;
+
+    //     const cartCount = document.querySelector('.cart-count');
+    //     const cartItemsContainer = document.querySelector('.cart-items');
+    //     const totalCostElement = document.getElementById('total-cost');
+
+    //     function toggleCart() {
+    //         document.getElementById('cart-modal').classList.toggle('hidden');
+    //     }
+
+    //     function addToCart(itemName, itemPrice) {
+    //         const cartItem = { name: itemName, price: itemPrice };
+    //         cartItems.push(cartItem);
+    //         totalCost += itemPrice;
+
+    //         // Update UI
+    //         updateCartDisplay();
+    //     }
+
+    //     function deleteFromCart(index) {
+    //         totalCost -= cartItems[index].price; // Subtract item cost
+    //         cartItems.splice(index, 1); // Remove item from array
+
+    //         // Update UI
+    //         updateCartDisplay();
+    //     }
+
+    //     function updateCartDisplay() {
+    //         // Update cart count
+    //         cartCount.textContent = cartItems.length;
+
+    //         // Update total cost
+    //         totalCostElement.textContent = totalCost;
+
+    //         // Update cart items display
+    //         cartItemsContainer.innerHTML = '';
+    //         if (cartItems.length === 0) {
+    //             cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
+    //             return;
+    //         }
+
+    //         cartItems.forEach((item, index) => {
+    //             const itemElement = document.createElement('div');
+    //             itemElement.className = 'cart-item';
+
+    //             itemElement.innerHTML = `
+    //                 <p>${item.name} - $${item.price}</p>
+    //                 <button class="delete-btn" onclick="deleteFromCart(${index})">Delete</button>
+    //             `;
+    //             cartItemsContainer.appendChild(itemElement);
+    //         });
+    //     } 
+
+
+    
+    function checkout() {
+        // Retrieve the cart items
+        const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+        if (cartItems.length === 0) {
+            alert('Your cart is empty. Please add items to proceed.');
+            return;
+        }
+
+        // Save cart items to localStorage (if not already saved)
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+        // Navigate to the checkout page
+        window.location.href = 'gocheckout.html';
+    }
+</script>
+
+        
+    </script>
+</body>
+</html>

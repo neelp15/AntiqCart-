@@ -1,0 +1,501 @@
+User_ID,Product_ID,Product_Type,Seller,Location,Rating
+8,122,Electronics,Amazon,California,5
+55,122,Electronics,Amazon,Washington,1
+45,178,Grocery,Amazon,Texas,1
+92,186,Beauty,Nike,Texas,1
+31,162,Clothing,Nike,California,5
+64,110,Clothing,Nike,Illinois,4
+71,196,Toys,Amazon,Texas,1
+52,158,Beauty,Walmart,Washington,5
+27,186,Home,Sephora,California,3
+11,191,Home,Best Buy,New York,4
+46,148,Beauty,Nike,Washington,2
+12,134,Home,Sephora,Nevada,4
+28,149,Sports,Nike,New York,4
+85,135,Toys,Best Buy,Texas,4
+99,103,Toys,Barnes & Noble,Florida,3
+42,132,Clothing,Sephora,Texas,1
+54,172,Toys,Walmart,Nevada,1
+64,181,Home,IKEA,Texas,3
+76,194,Beauty,IKEA,Nevada,5
+74,139,Beauty,LEGO,New York,2
+35,197,Beauty,Sephora,California,3
+4,142,Beauty,LEGO,New York,4
+90,116,Books,Best Buy,Florida,4
+73,159,Electronics,Barnes & Noble,New York,4
+74,173,Sports,IKEA,Ohio,1
+4,120,Electronics,Nike,Nevada,4
+74,125,Grocery,LEGO,New York,3
+33,105,Clothing,Barnes & Noble,New York,4
+49,168,Clothing,Nike,Texas,4
+41,186,Sports,Barnes & Noble,Ohio,5
+49,179,Grocery,Nike,Ohio,5
+34,143,Home,Sephora,Ohio,3
+34,163,Beauty,Nike,California,1
+40,170,Home,Amazon,Texas,4
+54,109,Books,Barnes & Noble,Florida,5
+94,170,Beauty,Barnes & Noble,Illinois,4
+63,162,Toys,Walmart,New York,2
+64,171,Electronics,Best Buy,Florida,1
+2,173,Books,Sephora,Illinois,1
+59,110,Beauty,Amazon,Ohio,2
+12,146,Toys,Walmart,Florida,1
+92,181,Books,LEGO,Florida,1
+75,162,Electronics,Best Buy,Florida,4
+35,129,Home,Nike,Texas,4
+13,180,Beauty,Walmart,California,2
+64,199,Grocery,Walmart,Ohio,2
+68,183,Grocery,Barnes & Noble,Nevada,5
+38,147,Home,IKEA,Washington,3
+23,109,Clothing,Nike,Nevada,1
+42,187,Clothing,Nike,Texas,3
+21,135,Beauty,Sephora,Texas,1
+54,182,Sports,Best Buy,Florida,2
+67,120,Grocery,IKEA,Ohio,5
+33,121,Electronics,Walmart,Washington,4
+39,124,Books,Nike,Texas,5
+76,111,Grocery,Sephora,Ohio,4
+77,185,Grocery,Best Buy,Florida,3
+37,125,Books,Sephora,Ohio,4
+10,127,Grocery,Best Buy,Florida,3
+11,104,Beauty,IKEA,Washington,1
+6,180,Grocery,LEGO,Nevada,2
+5,115,Toys,Walmart,Washington,5
+75,119,Grocery,Barnes & Noble,Texas,3
+93,120,Grocery,IKEA,Florida,4
+57,117,Grocery,IKEA,New York,5
+18,164,Grocery,Nike,Nevada,4
+25,180,Electronics,Best Buy,Florida,1
+58,149,Beauty,Walmart,California,1
+13,103,Toys,Sephora,Washington,3
+3,158,Electronics,IKEA,Ohio,1
+13,200,Grocery,Barnes & Noble,Texas,1
+79,176,Books,Sephora,Ohio,1
+34,166,Beauty,LEGO,California,1
+3,173,Toys,Barnes & Noble,Nevada,4
+14,180,Books,Amazon,Florida,5
+85,195,Grocery,Amazon,California,4
+82,146,Sports,Amazon,Texas,2
+80,134,Clothing,Amazon,California,1
+18,135,Beauty,LEGO,Texas,2
+18,164,Electronics,Nike,Washington,3
+77,196,Books,Nike,Illinois,3
+2,124,Sports,LEGO,Washington,3
+97,162,Home,Best Buy,Nevada,2
+48,110,Electronics,Amazon,Ohio,1
+25,116,Sports,Walmart,Ohio,2
+33,171,Electronics,Sephora,Nevada,4
+90,186,Clothing,Barnes & Noble,Florida,5
+27,119,Home,Best Buy,Florida,5
+53,194,Grocery,IKEA,Nevada,2
+26,139,Home,Walmart,Washington,4
+99,105,Home,Walmart,Illinois,1
+52,132,Sports,Sephora,California,1
+60,137,Books,Best Buy,Ohio,1
+70,163,Beauty,Barnes & Noble,New York,3
+34,130,Sports,Barnes & Noble,Illinois,3
+8,133,Home,Walmart,Nevada,1
+39,173,Home,Walmart,Florida,5
+2,146,Toys,Amazon,Nevada,4
+33,152,Books,Nike,Ohio,1
+98,138,Toys,Best Buy,Florida,4
+82,167,Home,Walmart,Ohio,5
+8,149,Home,Sephora,Ohio,2
+57,174,Clothing,LEGO,Ohio,4
+84,122,Grocery,Walmart,Florida,5
+94,108,Clothing,Amazon,Nevada,1
+85,198,Sports,Barnes & Noble,New York,5
+80,127,Sports,Amazon,Texas,5
+50,149,Toys,Nike,Nevada,4
+38,151,Electronics,Barnes & Noble,Illinois,1
+40,181,Sports,Barnes & Noble,Washington,4
+19,144,Electronics,Amazon,Florida,1
+74,134,Books,Amazon,Washington,3
+60,135,Electronics,Nike,Ohio,2
+79,156,Books,Nike,Nevada,4
+16,120,Grocery,Walmart,Ohio,4
+13,144,Books,IKEA,Texas,2
+49,147,Home,IKEA,California,3
+77,108,Grocery,Sephora,New York,4
+98,109,Books,Amazon,Illinois,1
+94,138,Sports,Nike,Nevada,1
+61,187,Grocery,Amazon,Washington,1
+16,153,Grocery,Amazon,California,4
+79,154,Home,Amazon,Nevada,2
+19,168,Sports,LEGO,Texas,3
+84,157,Electronics,Best Buy,Florida,5
+85,179,Toys,Barnes & Noble,Nevada,5
+66,157,Grocery,Walmart,Texas,3
+64,178,Electronics,Walmart,Florida,4
+94,149,Beauty,Nike,California,5
+78,116,Sports,LEGO,Texas,2
+13,123,Home,LEGO,Illinois,2
+3,175,Books,Amazon,Texas,3
+11,108,Books,Sephora,Florida,5
+71,181,Home,Best Buy,Nevada,3
+7,151,Home,Walmart,Nevada,3
+55,162,Toys,Walmart,Illinois,2
+3,151,Toys,Nike,California,3
+18,120,Sports,IKEA,Ohio,5
+38,169,Clothing,Best Buy,Washington,4
+40,184,Clothing,Amazon,New York,3
+97,175,Clothing,Best Buy,California,2
+57,159,Grocery,Amazon,California,1
+44,173,Electronics,Sephora,Ohio,5
+26,186,Books,Walmart,Illinois,1
+64,120,Books,Sephora,California,2
+91,157,Home,Sephora,Nevada,2
+2,197,Beauty,Amazon,Texas,5
+34,176,Sports,Amazon,Ohio,5
+53,120,Sports,Sephora,Washington,2
+53,143,Books,Walmart,Ohio,4
+60,104,Electronics,Sephora,Illinois,1
+19,171,Books,Sephora,Nevada,3
+52,149,Toys,Nike,Florida,2
+46,145,Beauty,IKEA,Illinois,4
+78,142,Sports,Sephora,California,4
+76,190,Home,Barnes & Noble,Texas,5
+5,121,Grocery,LEGO,Florida,5
+75,136,Sports,Sephora,Texas,5
+23,198,Grocery,LEGO,Washington,2
+71,120,Clothing,LEGO,Illinois,2
+62,128,Toys,Nike,California,4
+93,106,Electronics,Amazon,New York,5
+20,134,Toys,Walmart,Nevada,3
+49,185,Books,Amazon,Ohio,5
+62,153,Grocery,Best Buy,Illinois,3
+10,141,Toys,Best Buy,New York,1
+1,188,Home,Amazon,Illinois,4
+30,119,Beauty,Sephora,New York,3
+67,189,Clothing,Barnes & Noble,Nevada,1
+8,128,Electronics,Nike,Ohio,1
+97,177,Beauty,Best Buy,Nevada,1
+32,157,Clothing,Nike,Texas,4
+15,167,Books,Amazon,Illinois,4
+96,171,Electronics,Walmart,Nevada,3
+29,195,Grocery,Amazon,New York,2
+46,101,Beauty,Nike,Washington,3
+67,179,Grocery,Barnes & Noble,New York,5
+23,173,Home,IKEA,Florida,1
+54,193,Toys,Walmart,New York,2
+8,190,Clothing,LEGO,California,3
+71,164,Electronics,Barnes & Noble,California,4
+54,151,Toys,Walmart,Washington,3
+53,151,Electronics,Walmart,New York,5
+59,169,Electronics,LEGO,Nevada,1
+28,159,Electronics,Nike,New York,5
+54,178,Beauty,Barnes & Noble,Florida,5
+74,157,Sports,IKEA,Washington,2
+98,117,Books,Sephora,Ohio,1
+99,151,Home,Nike,Ohio,1
+74,168,Electronics,IKEA,Washington,1
+85,127,Books,Barnes & Noble,New York,5
+21,171,Electronics,Best Buy,New York,5
+52,115,Electronics,Amazon,New York,2
+86,174,Beauty,Nike,Illinois,4
+25,193,Clothing,Walmart,Nevada,4
+33,165,Clothing,Barnes & Noble,Illinois,2
+5,164,Clothing,Barnes & Noble,Washington,3
+56,142,Books,Amazon,Illinois,3
+70,187,Clothing,Sephora,Illinois,4
+22,172,Books,Nike,Illinois,1
+51,102,Sports,Nike,California,1
+86,171,Sports,Sephora,Texas,3
+26,182,Home,Best Buy,Illinois,1
+46,123,Toys,Barnes & Noble,Florida,2
+32,124,Sports,Nike,Florida,2
+3,189,Beauty,Amazon,Florida,3
+95,137,Toys,LEGO,Ohio,3
+8,160,Grocery,Walmart,Nevada,5
+100,130,Toys,Amazon,Nevada,1
+5,135,Grocery,LEGO,Ohio,4
+38,146,Beauty,Walmart,Texas,5
+83,121,Home,Amazon,Florida,5
+30,134,Toys,Sephora,Ohio,1
+84,104,Home,Nike,Florida,4
+38,168,Books,Best Buy,Ohio,2
+22,119,Home,Nike,New York,3
+55,189,Books,LEGO,California,5
+97,170,Electronics,Nike,Nevada,2
+72,138,Books,Amazon,Illinois,1
+94,122,Grocery,IKEA,Florida,4
+47,120,Toys,Walmart,Florida,1
+12,102,Home,Amazon,Nevada,5
+93,191,Grocery,IKEA,New York,2
+51,189,Home,Nike,Washington,2
+79,138,Toys,IKEA,Texas,1
+69,106,Home,Sephora,Nevada,3
+40,102,Sports,Walmart,New York,1
+72,111,Clothing,Sephora,California,3
+52,162,Beauty,LEGO,New York,5
+42,127,Books,Nike,New York,4
+21,129,Home,Nike,Illinois,2
+96,111,Clothing,IKEA,Ohio,4
+31,120,Home,LEGO,Illinois,2
+84,181,Home,Sephora,Nevada,4
+89,177,Books,Nike,Illinois,1
+71,158,Grocery,IKEA,New York,1
+74,168,Grocery,Barnes & Noble,California,1
+65,137,Clothing,Barnes & Noble,Illinois,3
+83,113,Grocery,LEGO,Illinois,2
+83,177,Beauty,Sephora,Nevada,3
+36,192,Beauty,Barnes & Noble,California,4
+64,137,Grocery,Walmart,Illinois,4
+88,171,Books,Amazon,New York,4
+94,126,Sports,Nike,New York,1
+45,145,Grocery,Sephora,Ohio,1
+84,173,Toys,Best Buy,Illinois,2
+99,128,Beauty,Amazon,New York,4
+33,160,Toys,LEGO,Washington,3
+36,192,Toys,Walmart,Illinois,5
+8,190,Toys,IKEA,Illinois,4
+6,165,Books,LEGO,Florida,1
+8,146,Home,Nike,Texas,4
+60,193,Clothing,Walmart,Ohio,2
+95,118,Toys,Amazon,Illinois,3
+70,193,Beauty,Barnes & Noble,California,5
+52,125,Books,Amazon,Illinois,1
+42,183,Books,IKEA,Illinois,3
+92,164,Grocery,IKEA,Florida,2
+34,159,Electronics,Sephora,Illinois,2
+4,175,Electronics,Sephora,Washington,2
+74,122,Toys,Nike,Florida,2
+2,179,Books,IKEA,Florida,1
+29,116,Sports,LEGO,New York,4
+95,191,Beauty,Barnes & Noble,California,5
+87,122,Home,Best Buy,New York,1
+38,114,Beauty,Barnes & Noble,Florida,2
+76,171,Home,Walmart,Ohio,2
+30,177,Home,Best Buy,Illinois,5
+8,147,Toys,Nike,Texas,3
+89,185,Electronics,Walmart,Florida,3
+20,185,Grocery,Amazon,Washington,4
+59,101,Toys,Sephora,New York,2
+59,173,Sports,Sephora,Ohio,4
+63,125,Toys,Barnes & Noble,Texas,1
+6,165,Beauty,IKEA,Washington,1
+84,140,Toys,Amazon,Ohio,1
+32,117,Home,Barnes & Noble,Texas,2
+17,130,Books,IKEA,Florida,1
+90,146,Toys,Walmart,Florida,5
+94,153,Books,Best Buy,New York,4
+14,166,Sports,Nike,Ohio,5
+72,188,Sports,Barnes & Noble,Illinois,4
+76,173,Home,Best Buy,New York,3
+16,139,Beauty,LEGO,California,2
+78,195,Beauty,Nike,Ohio,3
+2,129,Clothing,Sephora,Ohio,1
+24,162,Sports,LEGO,California,2
+33,164,Grocery,Walmart,Texas,3
+53,174,Home,Nike,Illinois,4
+45,177,Grocery,LEGO,Florida,3
+46,158,Grocery,Walmart,Florida,4
+81,143,Electronics,Best Buy,Illinois,2
+37,168,Clothing,Best Buy,Illinois,2
+30,105,Toys,Walmart,Washington,2
+95,150,Home,LEGO,Illinois,3
+94,120,Clothing,Amazon,Ohio,3
+9,132,Books,Amazon,Washington,5
+78,172,Grocery,Best Buy,Washington,2
+20,194,Sports,Amazon,Nevada,1
+42,124,Toys,Sephora,Washington,1
+84,142,Home,Best Buy,Ohio,1
+59,183,Beauty,Walmart,Illinois,2
+79,174,Toys,Amazon,Florida,3
+28,138,Clothing,Nike,Washington,4
+61,199,Clothing,Amazon,California,4
+86,109,Sports,Barnes & Noble,California,1
+19,152,Clothing,Sephora,Illinois,4
+77,200,Grocery,IKEA,Ohio,4
+36,142,Beauty,Best Buy,Illinois,5
+80,161,Books,Sephora,Washington,4
+39,112,Clothing,Nike,Texas,4
+38,128,Books,LEGO,New York,3
+54,174,Books,Walmart,Texas,5
+63,151,Books,Nike,Ohio,2
+17,152,Sports,Sephora,New York,1
+9,164,Electronics,Best Buy,California,4
+99,163,Electronics,LEGO,Illinois,3
+16,143,Books,Nike,Texas,1
+62,133,Electronics,LEGO,Illinois,5
+93,148,Books,Walmart,Washington,4
+91,198,Toys,Barnes & Noble,California,5
+5,101,Clothing,LEGO,Nevada,5
+54,134,Sports,LEGO,Illinois,4
+2,186,Clothing,IKEA,Nevada,1
+70,123,Sports,Sephora,Nevada,3
+49,103,Home,Walmart,California,3
+28,179,Beauty,Sephora,Nevada,3
+28,117,Clothing,Barnes & Noble,Illinois,2
+99,165,Toys,IKEA,Florida,1
+93,133,Beauty,Amazon,Washington,4
+91,143,Books,Best Buy,Florida,4
+44,191,Electronics,Amazon,Illinois,5
+52,129,Books,Walmart,Nevada,1
+8,154,Beauty,Amazon,Washington,4
+72,116,Sports,Best Buy,Illinois,2
+94,125,Grocery,Sephora,Ohio,3
+69,171,Toys,LEGO,Washington,3
+25,139,Sports,IKEA,Texas,3
+21,192,Clothing,Sephora,Florida,1
+93,142,Toys,Sephora,Illinois,5
+47,134,Grocery,Barnes & Noble,Washington,4
+12,136,Grocery,Amazon,Illinois,2
+25,138,Sports,IKEA,Florida,4
+25,160,Clothing,Walmart,New York,2
+68,161,Sports,Barnes & Noble,Texas,4
+67,127,Beauty,Best Buy,Nevada,4
+4,144,Books,Nike,Nevada,5
+95,187,Books,Best Buy,Texas,2
+100,172,Clothing,Sephora,Washington,4
+1,114,Books,Best Buy,Washington,5
+12,122,Beauty,Best Buy,Florida,2
+72,112,Sports,Nike,Illinois,1
+67,177,Grocery,Barnes & Noble,Ohio,3
+99,176,Sports,Sephora,Washington,4
+57,167,Toys,IKEA,Texas,2
+86,127,Clothing,Nike,California,1
+73,112,Clothing,Barnes & Noble,California,5
+22,177,Books,LEGO,Washington,1
+43,101,Books,Nike,Texas,1
+42,114,Electronics,Best Buy,Illinois,4
+92,178,Grocery,Sephora,Florida,4
+5,167,Toys,Best Buy,Florida,4
+59,147,Home,IKEA,Nevada,1
+57,189,Books,Nike,Texas,3
+62,133,Home,Barnes & Noble,Texas,5
+93,183,Grocery,Amazon,Texas,5
+17,164,Books,Barnes & Noble,New York,2
+43,176,Electronics,Walmart,Ohio,2
+37,199,Home,LEGO,New York,3
+68,148,Home,Sephora,Nevada,4
+60,176,Toys,Sephora,Texas,2
+61,198,Clothing,Walmart,Florida,4
+7,177,Clothing,IKEA,Texas,1
+82,164,Grocery,IKEA,Nevada,2
+38,119,Books,Nike,New York,5
+36,157,Toys,IKEA,New York,1
+88,197,Toys,LEGO,Texas,2
+40,153,Electronics,Amazon,Washington,5
+94,114,Toys,Sephora,Ohio,1
+6,151,Electronics,Walmart,Ohio,1
+21,137,Beauty,Walmart,Florida,4
+85,150,Clothing,Walmart,Florida,4
+32,141,Clothing,Best Buy,Nevada,1
+28,182,Clothing,Barnes & Noble,California,3
+93,191,Toys,Amazon,Florida,2
+87,190,Grocery,Walmart,Texas,4
+80,200,Sports,LEGO,Washington,2
+92,148,Beauty,Nike,New York,2
+5,125,Electronics,Best Buy,California,1
+20,198,Beauty,Barnes & Noble,Texas,1
+73,106,Home,Barnes & Noble,Washington,3
+66,189,Electronics,IKEA,Texas,1
+70,180,Beauty,Nike,Nevada,5
+26,155,Sports,Nike,California,4
+7,160,Home,Sephora,New York,3
+10,192,Electronics,Barnes & Noble,New York,3
+19,159,Beauty,IKEA,New York,1
+16,123,Clothing,Nike,Illinois,1
+73,197,Grocery,IKEA,Nevada,3
+79,159,Beauty,Sephora,Texas,1
+59,116,Beauty,Best Buy,Illinois,1
+44,133,Home,Sephora,Nevada,3
+12,125,Electronics,Barnes & Noble,Washington,3
+4,180,Sports,Barnes & Noble,Texas,3
+85,161,Beauty,IKEA,New York,3
+51,177,Sports,Best Buy,Illinois,4
+55,101,Home,Barnes & Noble,California,1
+10,160,Books,LEGO,Illinois,2
+25,138,Grocery,Nike,Nevada,4
+65,114,Books,Barnes & Noble,Illinois,1
+17,169,Sports,Best Buy,New York,2
+9,166,Sports,Best Buy,Washington,4
+57,134,Toys,IKEA,Florida,3
+63,174,Home,Best Buy,Ohio,4
+61,185,Beauty,LEGO,Ohio,5
+14,123,Clothing,Sephora,Texas,4
+30,170,Toys,Sephora,Texas,2
+79,109,Beauty,IKEA,California,1
+33,135,Sports,Walmart,New York,5
+1,114,Home,Sephora,Illinois,4
+79,183,Books,Best Buy,Washington,4
+61,167,Electronics,Walmart,New York,1
+67,154,Clothing,Amazon,New York,4
+81,188,Sports,IKEA,Nevada,4
+24,175,Sports,Sephora,Washington,1
+77,126,Books,Amazon,Florida,2
+96,143,Toys,LEGO,Washington,3
+41,131,Electronics,Walmart,California,5
+13,153,Sports,IKEA,Texas,4
+14,166,Grocery,Barnes & Noble,Texas,5
+5,168,Home,IKEA,Washington,4
+29,111,Clothing,Walmart,California,1
+74,196,Sports,LEGO,California,5
+85,189,Grocery,Best Buy,Florida,5
+58,137,Grocery,Amazon,Nevada,3
+61,117,Books,Sephora,Florida,5
+30,115,Grocery,Barnes & Noble,Ohio,4
+43,158,Clothing,Sephora,Nevada,3
+40,185,Clothing,LEGO,Nevada,1
+73,105,Books,Sephora,Washington,3
+13,194,Clothing,Nike,Washington,4
+22,191,Electronics,Best Buy,Ohio,1
+93,132,Books,Amazon,Florida,4
+35,143,Books,Best Buy,New York,5
+66,198,Grocery,Best Buy,Nevada,3
+70,198,Clothing,Barnes & Noble,Florida,4
+15,163,Beauty,LEGO,Florida,5
+25,161,Grocery,Nike,Washington,4
+65,174,Beauty,Amazon,Ohio,1
+4,104,Grocery,Best Buy,Nevada,5
+9,134,Sports,IKEA,Illinois,2
+46,146,Books,LEGO,Texas,2
+31,138,Sports,Barnes & Noble,California,4
+26,198,Clothing,Best Buy,Florida,4
+99,182,Beauty,IKEA,Illinois,5
+47,158,Home,Best Buy,Ohio,5
+29,104,Electronics,Barnes & Noble,Florida,1
+18,174,Beauty,Amazon,Ohio,5
+98,120,Home,Walmart,Nevada,3
+95,143,Clothing,Barnes & Noble,Ohio,5
+59,161,Home,Barnes & Noble,Texas,1
+26,193,Electronics,Nike,Nevada,1
+55,178,Beauty,LEGO,Florida,2
+65,107,Clothing,Nike,Texas,3
+93,121,Clothing,Barnes & Noble,Illinois,2
+98,118,Sports,Sephora,Nevada,5
+87,125,Sports,Walmart,New York,5
+89,191,Electronics,Sephora,New York,5
+98,151,Grocery,IKEA,Texas,1
+55,164,Electronics,Nike,Ohio,3
+29,169,Grocery,Amazon,Washington,3
+10,138,Books,Walmart,California,3
+32,147,Home,Walmart,Texas,1
+60,126,Toys,Barnes & Noble,Washington,2
+1,173,Home,Sephora,California,1
+79,110,Electronics,Barnes & Noble,California,4
+76,120,Books,Amazon,Florida,3
+15,111,Grocery,Best Buy,Ohio,3
+35,187,Sports,Barnes & Noble,California,2
+59,173,Clothing,Amazon,Nevada,3
+14,200,Books,LEGO,Florida,2
+96,149,Toys,Amazon,California,4
+78,122,Toys,IKEA,Washington,4
+51,162,Beauty,Best Buy,Nevada,5
+28,199,Grocery,Walmart,Nevada,1
+69,129,Electronics,IKEA,Washington,5
+69,141,Grocery,Sephora,Illinois,1
+1,118,Clothing,Nike,New York,3
+49,196,Sports,LEGO,Washington,5
+46,187,Beauty,Walmart,California,5
+62,103,Beauty,Sephora,Illinois,4
+50,191,Clothing,Nike,Illinois,3
+55,180,Sports,Walmart,New York,3
+84,186,Books,Best Buy,Florida,3
+88,153,Clothing,Walmart,Nevada,1
+24,130,Grocery,Amazon,New York,4
+84,183,Books,Sephora,Nevada,4
+68,137,Clothing,Amazon,Ohio,5
+98,199,Sports,LEGO,Ohio,2
+8,116,Grocery,Amazon,Illinois,3

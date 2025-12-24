@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .chatbox-container {
+            width: 400px;
+            height: 600px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .chatbox-header {
+            background-color: #0078d7;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .chatbox-messages {
+            flex: 1;
+            padding: 10px;
+            overflow-y: auto;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+        }
+        .message {
+            margin: 10px 0;
+            max-width: 80%;
+        }
+        .user-message {
+            align-self: flex-end;
+        }
+        .bot-message {
+            align-self: flex-start;
+        }
+        .message-text {
+            padding: 10px;
+            border-radius: 15px;
+            font-size: 14px;
+            word-wrap: break-word;
+        }
+        .user-message .message-text {
+            background-color: #0078d7;
+            color: #ffffff;
+        }
+        .bot-message .message-text {
+            background-color: #e4e6eb;
+            color: #333;
+        }
+        .chatbox-input {
+            display: flex;
+            padding: 10px;
+            background-color: #ffffff;
+            border-top: 1px solid #ddd;
+        }
+        .chatbox-input input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .chatbox-input button {
+            margin-left: 10px;
+            padding: 10px 15px;
+            background-color: #0078d7;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .chatbox-input button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <div class="chatbox-container">
+        <div class="chatbox-header">Contact Us - Chatbot</div>
+        <div class="chatbox-messages" id="chatboxMessages">
+            <div class="message bot-message">
+                <div class="message-text">Hi! How can we assist you today?</div>
+            </div>
+        </div>
+        <div class="chatbox-input">
+            <input type="text" id="userInput" placeholder="Type your message here...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script>
+        const messagesContainer = document.getElementById('chatboxMessages');
+        const userInput = document.getElementById('userInput');
+
+        const responses = {
+            'help': "Sure, how can I assist you? Type 'order', 'refund', or 'account'.",
+            'order': "Please provide your order ID (e.g., #12345) so we can assist you.",
+            'refund': "Refunds take 5-7 business days. Would you like to initiate a refund?",
+            'account': "Are you facing login issues or password reset problems?"
+        };
+
+        function sendMessage() {
+            const text = userInput.value.trim();
+            if (text === "") return;
+            addMessage(text, 'user');
+            userInput.value = "";
+            setTimeout(() => generateBotResponse(text), 1000);
+        }
+
+        function addMessage(text, sender) {
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('message', sender === 'user' ? 'user-message' : 'bot-message');
+            messageDiv.innerHTML = `<div class="message-text">${text}</div>`;
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+
+        function generateBotResponse(userText) {
+            if (userText.startsWith("#")) {
+                addMessage(getOrderDetails(userText), 'bot');
+                return;
+            }
+            const response = responses[userText.toLowerCase()] || "I'm not sure I understand. Try 'help', 'order', 'refund', or 'account'.";
+            addMessage(response, 'bot');
+        }
+
+        function getOrderDetails(orderId) {
+            const dummyOrders = {
+                "#12345": "Order #12345: Shipped on March 25, expected delivery March 30. Tracking: AB123456789",
+                "#67890": "Order #67890: Processing. Expected to ship in 2 days. Contact support if urgent.",
+                "#11121": "Order #11121: Delivered on March 20. Let us know if you need further help."
+            };
+            return dummyOrders[orderId] || "Order not found. Please check your order ID and try again.";
+        }
+
+        userInput.addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                sendMessage();
+            }
+        });
+    </script>
+</body>
+</html>

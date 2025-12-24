@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now - AntiqCart</title>
+    <link rel="stylesheet" href="gotoshop.css"> <!-- Link to your global CSS file -->
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>AntiqCart</h1>
+            <nav>
+                <a href="go.html">Home</a>
+                <a href="gocart.html">Cart</a>
+            </nav>
+        </div>
+    </header>
+    <main class="shop-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Filter By</h3>
+            <div class="filter-category">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#" onclick="filterItems('vase')">Vases</a></li>
+                    <li><a href="#" onclick="filterItems('clock')">Clocks</a></li>
+                    <li><a href="#" onclick="filterItems('painting')">Paintings</a></li>
+                </ul>
+            </div>
+            <div class="filter-price">
+                <h4>Price</h4>
+                <ul>
+                    <li><a href="#" onclick="filterPrice('low')">Below $50</a></li>
+                    <li><a href="#" onclick="filterPrice('medium')">$50 - $100</a></li>
+                    <li><a href="#" onclick="filterPrice('high')">Above $100</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <section class="product-list">
+            <!-- Multiple items in the same category -->
+            <div class="product-item" data-category="vase" data-price="40">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrWhbniiJpuS5y96uzkFCU37SDTrOGxFDB8A&s" alt="Antique Vase 1">
+                <p>Antique Vase 1 - $40</p>
+                <button onclick="addToCart('Antique Vase 1', 40)">Add to Cart</button>
+            </div>
+            <div class="product-item" data-category="vase" data-price="60">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGFwCA_bkGiwjY1x5TCMWR24bDqWhFM0gOEQ&s" alt="Antique Vase 2">
+                <p>Antique Vase 2 - $60</p>
+                <button onclick="addToCart('Antique Vase 2', 60)">Add to Cart</button>
+            </div>
+            <div class="product-item" data-category="clock" data-price="80">
+                <img src="https://img.freepik.com/free-vector/vintage-wall-clock-illustration-vector-remixed-from-artwork-by-peter-connin_53876-114744.jpg" alt="Vintage Clock">
+                <p>Vintage Clock - $80</p>
+                <button onclick="addToCart('Vintage Clock', 80)">Add to Cart</button>
+            </div>
+            <div class="product-item" data-category="clock" data-price="80">
+                <img src="https://images-cdn.ubuy.co.in/6539ba8994c63f39204ac19c-aels-vintage-wall-clock-european-style.jpg" alt="Vintage Clock">
+                <p>Vintage Clock - $80</p>
+                <button onclick="addToCart('Vintage Clock', 80)">Add to Cart</button>
+            </div>
+            <div class="product-item" data-category="clock" data-price="80">
+                <img src="https://m.media-amazon.com/images/I/81lZaXP9GbL.jpg" alt="Vintage Clock">
+                <p>Vintage Clock - $80</p>
+                <button onclick="addToCart('Vintage Clock', 80)">Add to Cart</button>
+            </div>
+            <div class="product-item" data-category="painting" data-price="120">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5LAQxeuf_ZnYUlu5IlbuKayzTfwuZ9ybeQQ&s" alt="Classic Painting">
+                <p>Classic Painting - $120</p>
+                <button onclick="addToCart('Classic Painting', 120)">Add to Cart</button>
+            </div>
+            <div class="product-item" data-category="painting" data-price="120">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIORKtYpu7NFdki202Yj6meBQWcYIcSXE0ag&s" alt="Classic Painting">
+                <p>Classic Painting - $120</p>
+                <button onclick="addToCart('Classic Painting', 120)">Add to Cart</button>
+            </div>
+            <div class="product-item" data-category="painting" data-price="120">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyuNtLeLTAFHWDMg-j0VRUrxoRiBX9-7WQcg&s" alt="Classic Painting">
+                <p>Classic Painting - $120</p>
+                <button onclick="addToCart('Classic Painting', 120)">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+    <script>
+        function filterItems(category) {
+            const items = document.querySelectorAll('.product-item');
+            items.forEach(item => {
+                if (item.dataset.category === category || category === 'all') {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        function filterPrice(range) {
+            const items = document.querySelectorAll('.product-item');
+            items.forEach(item => {
+                const price = parseInt(item.dataset.price, 10);
+                if ((range === 'low' && price < 50) ||
+                    (range === 'medium' && price >= 50 && price <= 100) ||
+                    (range === 'high' && price > 100) ||
+                    range === 'all') {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        function addToCart(itemName, itemPrice) {
+            // Retrieve existing cart or initialize it
+            let cart = JSON.parse(localStorage.getItem('cartItems')) || [];
+            
+            // Add the new item
+            cart.push({ name: itemName, price: itemPrice });
+            localStorage.setItem('cartItems', JSON.stringify(cart));
+            
+            alert(`${itemName} added to cart!`);
+        }
+    </script>
+</body>
+</html>

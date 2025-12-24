@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seller Login - AntiqCart">
+    <title>Seller Login | AntiqCart</title>
+    <link rel="stylesheet" href="gotologin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h1>Seller Login</h1>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Enter your email" 
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        placeholder="Enter your password" 
+                        required>
+                </div>
+                <div id="errorMessage" class="error-message"></div>
+                <div class="form-group">
+                    <button type="button" class="btn" onclick="validateLogin()">Login</button>
+                </div>
+                <div class="form-footer">
+                    <p>Don't have an account? <a href="goregister.html">Register here</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="gologin.js"></script>
+    
+</body>
+</html>
